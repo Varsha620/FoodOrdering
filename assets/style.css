@@ -1,0 +1,69 @@
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            display: flex;
+            width: 80%;
+            max-width: 800px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .login-form {
+            flex: 1;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .login-form:nth-child(1) {
+            background-color: #333;
+            color: white;
+        }
+
+        .login-form:nth-child(2) {
+            background-color: #ff5733;
+            color: white;
+        }
+
+        .login-form h2 {
+            margin-top: 0;
+        }
+
+        .login-form input {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .login-form input[type="email"], .login-form input[type="password"] {
+            background-color: #fff;
+            color: #333;
+        }
+
+        .login-form input[type="submit"] {
+            background-color: #ffffff;
+            color: rgb(0, 0, 0);
+            cursor: pointer;
+        }
+
+        .login-form a {
+            color: white;
+            text-decoration: none;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+        }
